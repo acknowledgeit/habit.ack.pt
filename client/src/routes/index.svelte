@@ -4,7 +4,7 @@
   let habits = [];
 
 	onMount(async () => {
-		const res = await fetch(`http://${process.env.API_URL}/habits`);
+		const res = await fetch(`/api/habits`);
 		habits = await res.json();
 	});
 </script>

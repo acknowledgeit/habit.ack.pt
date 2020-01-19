@@ -11,15 +11,8 @@ const mode = process.env.NODE_ENV;
 const dev = mode === 'development';
 const legacy = !!process.env.SAPPER_LEGACY_BUILD;
 
-const apiUrl = process.env.API_URL || 'localhost:3001';
-
 const onwarn = (warning, onwarn) => (warning.code === 'CIRCULAR_DEPENDENCY' && /[/\\]@sapper[/\\]/.test(warning.message)) || onwarn(warning);
 const dedupe = importee => importee === 'svelte' || importee.startsWith('svelte/');
-
-const envVars = {
-	'process.env.NODE_ENV': JSON.stringify(mode),
-	'process.env.API_URL': JSON.stringify(apiUrl)
-}
 
 export default {
 	client: {
@@ -28,7 +21,7 @@ export default {
 		plugins: [
 			replace({
 				'process.browser': true,
-				...envVars
+				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
 				dev,
@@ -72,7 +65,7 @@ export default {
 		plugins: [
 			replace({
 				'process.browser': false,
-				...envVars
+				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			svelte({
 				generate: 'ssr',
@@ -97,7 +90,7 @@ export default {
 			resolve(),
 			replace({
 				'process.browser': true,
-				...envVars
+				'process.env.NODE_ENV': JSON.stringify(mode)
 			}),
 			commonjs(),
 			!dev && terser()
