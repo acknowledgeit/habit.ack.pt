@@ -1,0 +1,24 @@
+version: '3.6'
+
+services:
+  # db:
+  #   container_name: habittracking_db
+  #   image: postgres:12.1
+
+  nginx:
+    container_name: habittracking_nginx
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+
+  client:
+    container_name: habittracking_client
+    image: acknowledge/habittracking_client
+    build: ./client
+
+  server:
+    container_name: habittracking_server
+    image: acknowledge/habittracking_server
+    build: ./server

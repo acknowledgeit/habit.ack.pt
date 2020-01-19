@@ -16,7 +16,7 @@ COPY --from=build-env /app/out .
 
 # Set environment variables and port
 ENV ASPNETCORE_ENVIRONMENT Production
-ENV ASPNETCORE_URLS http://+:5000
-EXPOSE 5000
+ENV ASPNETCORE_URLS http://+:3001
+EXPOSE 3001
 
 ENTRYPOINT ["dotnet", "HabitTracking.Server.dll"]
