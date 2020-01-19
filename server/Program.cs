@@ -20,7 +20,9 @@ namespace HabitTracking.Server
             return Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder
+                        .UsePortEnvironmentVariable()
+                        .UseStartup<Startup>();
                 });
         }
     }
