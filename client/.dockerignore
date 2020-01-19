@@ -1,9 +1,3 @@
-/*
-!/Dockerfile
-!/package.json
-!/package-lock.json
-!/__sapper__
-/__sapper__/*
-!/__sapper__/build
-!/static
-!/content
+/node_modules
+/__sapper__
+/_*
