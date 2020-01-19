@@ -24,14 +24,16 @@ namespace HabitTracking.Server
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddCors()
+                .AddControllers();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseCors(options => options.AllowAnyOrigin())
+                    .UseDeveloperExceptionPage();
             }
 
             app.UseRouting()
