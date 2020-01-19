@@ -10,6 +10,12 @@
 
 The whole model for this application is based on this [video](https://www.youtube.com/watch?v=0bxIg3M_MHY) by [Thomas Frank](https://youtube.com/thomasfrank)
 
+## Deployment
+
+### Local Environment
+
+Using the provided Docker Compose configuration which will spin up a (nginx) reverse proxy to handle request for both the client and the server as well as a (PostgreSQL) database instance.
+
 ## Stack
 
 ### Server
