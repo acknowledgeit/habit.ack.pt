@@ -3,7 +3,7 @@
 ### Tasks
 - [ ] Model
 - [x] Pick stack
-  - Server - C# NET Core
+  - Server - ASP.NET Core Web API
   - Client - Sapper
 
 ## Model
@@ -14,7 +14,7 @@ The whole model for this application is based on this [video](https://www.youtub
 
 ### Server
 
-Server is a simple [C# NET Core](https://dot.net/) API with integration with Google authentication.
+The server is a simple [ASP.NET Core Web API](https://dot.net/) with integration with Google authentication.
 
 ### Client
 
