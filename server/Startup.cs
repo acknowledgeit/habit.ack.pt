@@ -34,8 +34,7 @@ namespace HabitTracking.Server
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection()
-                .UseRouting()
+            app.UseRouting()
                 .UseAuthorization()
                 .UseEndpoints(endpoints =>
                 {
