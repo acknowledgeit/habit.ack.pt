@@ -10,8 +10,6 @@
 
 The whole model for this application is based on this [video](https://www.youtube.com/watch?v=0bxIg3M_MHY) by [Thomas Frank](https://youtube.com/thomasfrank)
 
-[![A Better Way to Track Your Habits](https://img.youtube.com/vi/0bxIg3M_MHY/0.jpg)](https://www.youtube.com/watch?v=0bxIg3M_MHY)
-
 ## Stack
 
 ### Server
