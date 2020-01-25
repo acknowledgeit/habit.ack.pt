@@ -2,11 +2,11 @@ version: '3.6'
 
 services:
   # db:
-  #   container_name: habittracking_db
+  #   container_name: habitus_db
   #   image: postgres:12.1
 
   nginx:
-    container_name: habittracking_nginx
+    container_name: habitus_nginx
     image: nginx:latest
     ports:
       - "8080:80"
@@ -14,11 +14,11 @@ services:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
 
   client:
-    container_name: habittracking_client
-    image: acknowledge/habittracking_client
+    container_name: habitus_client
+    image: acknowledge/habitus_client
     build: ./client
 
   server:
-    container_name: habittracking_server
-    image: acknowledge/habittracking_server
+    container_name: habitus_server
+    image: acknowledge/habitus_server
     build: ./server

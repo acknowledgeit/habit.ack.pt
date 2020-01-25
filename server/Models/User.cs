@@ -1,6 +1,6 @@
 using System;
 
-namespace HabitTracking.Server.Models
+namespace Habitus.Server.Models
 {
     public class User
     {

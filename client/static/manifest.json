@@ -1,8 +1,8 @@
 {
 	"background_color": "#ffffff",
 	"theme_color": "#333333",
-	"name": "Habit Tracking App",
-	"short_name": "habit.ack.pt",
+	"name": "Habitus",
+	"short_name": "habitus.ack.pt",
 	"display": "minimal-ui",
 	"start_url": "/",
 	"icons": [

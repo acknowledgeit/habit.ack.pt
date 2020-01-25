@@ -1,4 +1,4 @@
-# Habit Tracking App
+# Habitus
 
 ### Tasks
 - [ ] Model

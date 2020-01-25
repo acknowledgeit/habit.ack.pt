@@ -19,4 +19,4 @@ ENV ASPNETCORE_ENVIRONMENT Production
 ENV PORT 3001
 EXPOSE 3001
 
-ENTRYPOINT ["dotnet", "HabitTracking.Server.dll"]
+ENTRYPOINT ["dotnet", "Habitus.Server.dll"]

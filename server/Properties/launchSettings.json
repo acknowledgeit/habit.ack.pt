@@ -12,15 +12,15 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "habittracking",
+      "launchUrl": "habitus",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "HabitTracking.Server": {
+    "Habitus.Server": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "habittracking",
+      "launchUrl": "habitus",
       "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"

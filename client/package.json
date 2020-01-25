@@ -1,6 +1,6 @@
 {
-  "name": "habit.ack.pt",
-  "description": "Habit Tracking App",
+  "name": "habitus.ack.pt",
+  "description": "Habitus - Habit Tracking App",
   "version": "0.0.1",
   "private": true,
   "scripts": {
